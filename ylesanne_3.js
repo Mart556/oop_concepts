@@ -26,3 +26,5 @@ class Student {
 
 const student = new Student('John', 1)
 console.log(student, student.getName())
+
+console.log(student.getStatus(), student.setStatus('Expelled'), student.getStatus())
