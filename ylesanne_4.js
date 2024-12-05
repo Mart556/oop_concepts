@@ -87,14 +87,7 @@ class Paint {
     }
 
     getCircles() {
-        let circles = [];
-        this.shapes.forEach(shape => {
-            if (shape instanceof Circle) {
-                circles.push(shape)
-            }
-        })
-
-        return circles
+        return this.shapes.filter(shape => shape instanceof Circle)
     }
 
     getSquares() {
